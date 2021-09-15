@@ -24,5 +24,11 @@ namespace Bakery.Tests
       int price = breadTest.Price;
       Assert.AreEqual(10, price);
     }
+    [TestMethod]
+    public void SixLoavesForTwentyDollars() {
+      Bread breadTest = new Bread("6");
+      int price = breadTest.Price;
+      Assert.AreEqual(20, price);
+    }
   }
 }
