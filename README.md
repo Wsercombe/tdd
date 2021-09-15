@@ -21,7 +21,7 @@
 
 * _Navigate to the gitub page to find the application_
 * _Clone the application from the github address to their local computer_
-* _Run "npm restore" within the terminal of the downloaded directory_
+* _Run "dotnet restore" within the terminal of the downloaded directory_
 * _Run "npm run build" within the terminal of the downloaded directory_
 
 ## Known Bugs
