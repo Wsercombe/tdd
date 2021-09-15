@@ -14,7 +14,7 @@ namespace Bakery.Models
       Price = CalculateBread();
     }
     public int CalculateBread () {
-      return NumberBread * (5 - NumberBread / 3);
+      return NumberBread * 5 - (NumberBread / 3 * 5);
     }
   }
 }
