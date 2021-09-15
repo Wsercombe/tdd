@@ -14,7 +14,7 @@ namespace Bakery.Models
       Price = CalculatePastry();
     }
     public int CalculatePastry () {
-      return NumberPastries * 7;
+      return NumberPastries * 2 - NumberPastries / 3;
     }
   }
 }
