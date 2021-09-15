@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Bakery.Models
@@ -5,18 +6,15 @@ namespace Bakery.Models
   public class Bread
   {
     public int NumberBread { get; set; }
+    public int Price { get; set; }
 
-    public Bread(string numberBread)
+    public Bread (string numberBread)
     {
-      NumberBread = numberBread;
-      return CalculateBread();
+      NumberBread = Int32.Parse(numberBread);
+      Price = CalculateBread();
     }
-    public CalculateBread () {
-      return NumberBread * 3;
-    }
-    void ClearAll()
-    {
-      _instances.Clear();
+    public int CalculateBread () {
+      return NumberBread * 5;
     }
   }
 }

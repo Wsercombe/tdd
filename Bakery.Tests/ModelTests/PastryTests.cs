@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Bakery;
+using Bakery.Models;
 
 namespace Bakery.Tests
 {
@@ -8,7 +8,9 @@ namespace Bakery.Tests
   {
     [TestMethod]
     public void OnePastryForSevenDollars() {
-      return false;
+      Pastry pastryTest = new Pastry("1");
+      int price = pastryTest.Price;
+      Assert.AreEqual(7, price);
     }
     // Test method will go here
   }

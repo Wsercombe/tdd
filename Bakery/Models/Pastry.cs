@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Bakery.Models
@@ -5,14 +6,15 @@ namespace Bakery.Models
   public class Pastry
   {
     public int NumberPastries { get; set; }
+    public int Price { get; set; }
 
-    public Pastry(int numberPastries)
+    public Pastry (string numberPastries)
     {
-      NumberPastries = numberPastries;
+      NumberPastries = Int32.Parse(numberPastries);
+      Price = CalculatePastry();
     }
-    void ClearAll()
-    {
-      _instances.Clear();
+    public int CalculatePastry () {
+      return NumberPastries * 7;
     }
   }
 }
