@@ -30,6 +30,12 @@ namespace Bakery.Tests
       int price = pastryTest.Price;
       Assert.AreEqual(7, price);
     }
+    [TestMethod]
+    public void FivePastriesForNineDollars() {
+      Pastry pastryTest = new Pastry("5");
+      int price = pastryTest.Price;
+      Assert.AreEqual(9, price);
+    }
     // Test method will go here
   }
 }
