@@ -9,6 +9,10 @@ namespace Bakery.Models
     public Bread(string numberBread)
     {
       NumberBread = numberBread;
+      return CalculateBread();
+    }
+    public CalculateBread () {
+      return NumberBread * 3;
     }
     void ClearAll()
     {
