@@ -8,10 +8,7 @@
 
 * _C##_
 * _GIT_
-* _Java Script_
 * _Visual Studio_
-* _Webpack_
-* _Exchange Rates API_
 
 ## Description
 
@@ -21,8 +18,8 @@
 
 * _Navigate to the gitub page to find the application_
 * _Clone the application from the github address to their local computer_
-* _Run "dotnet restore" within the terminal of the downloaded directory_
-* _Run "npm run build" within the terminal of the downloaded directory_
+* _Run "dotnet restore" within the terminal of the Bakery directory_
+* _Run "dotnet run" within the terminal of the Bakery directory_
 
 ## Known Bugs
 
